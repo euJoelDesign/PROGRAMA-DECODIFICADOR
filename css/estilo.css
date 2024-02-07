@@ -1,12 +1,14 @@
 body{
     margin: 0%;
     padding: 0%;
+    height: auto;
     background-image: url(../imagens/photo-1557683316-973673baf926.avif);
     background-repeat: no-repeat;
     background-size: cover;
 }
 #homeInfo{
     background-color: red;
+    margin-bottom: 30%;
 
 }
 #container{
@@ -21,7 +23,7 @@ body{
 }
 #caixa-mensagem{
     width: 30%; 
-    height: 500px;
+    height: 500 px;
 }
 
 #infoHome{
@@ -35,6 +37,13 @@ body{
     border: solid #ffffff 2px;
     border-radius: 30px;
     
+}
+#acessar:hover{
+    background-color: rgb(194, 194, 0);
+}
+#encriptografar:hover{
+    background-color: #ececec;
+    color: rgb(0, 147, 233);
 }
 #logoPagina{
     margin-top: -10%;
