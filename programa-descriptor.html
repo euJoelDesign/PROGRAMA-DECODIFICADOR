@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Descriptor</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" media="Embossed" href="css/estilo-phones.css">
+    <link rel="stylesheet" type="text/css" href="css/responsivo.css">
+
+  </head>
+
+  <body style="margin: auto;">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <!-- Logo -->
+            <a id="logoTopo" href="" class="navbar-brand"><img src="imagens/logoCriptor.png" alt="" width="200"></a>
+
+            <!-- Menu Hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" 
+            data-target="#navegacao2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navegacao -->
+            <div class="collapse navbar-collapse" id="navegacao2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Pagina Inicial</a>
+
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" 
+                        data-toggle="dropdown">Outros programas</a>
+
+                        <div class="dropdown-menu">
+                            <a href="" class="dropdown-item">Programa 1</a>
+                            <a href="" class="dropdown-item">Programa 2</a>
+                            <a href="" class="dropdown-item">Programa 3</a>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+    <div class=" clearfix"  id="container">
+            <div id="divMain" class="w-auto">
+                <div class="form-group float-sm-left" id="campo-criptografia" >
+                    <h1 class="text-info text-center">Vamos lá</h1>
+                    <h7 class="vamos">Digite ou cole seu texto aqui</h7>                    
+                    <div style=" width: 100%; margin: auto;">
+                        <div class="input" >
+                            <textarea class="form-control" id="textCriptor" rows="15" 
+                            placeholder="Digite o texto que você deseja criptografar ou descriptografar"></textarea>
+                        </div>
+
+                        <div  class="area-button" >
+                            <button onclick="criptoText()" class="btn btn-info btn-lg " type="button" id="encriptografar">Encriptografar</button>
+                            <button  onclick="descriptoText(), limparCampo()" class="btn btn-lg bg" type="button" id="descriptografar">Descriptografar</button> 
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class=" float-sm-right flots-sl-left" id="caixa-mensagem">
+                    <div id="caixa" >
+                            
+                            
+                            <div id="exibe-mensagem">
+                                <h3 class="text-info text-center">Nenhuma mensagem a ser exibida</h3>
+                                <h7 class="text-center text-light">Seu texto será exibido aqui.</h7>
+                                <img src="imagens/tecnology.png" alt="imagem de tecnologias" width="80%">
+                            </div>
+                            <div id="p" class="alert ">Texto Copiado com Sucesso</div>
+                            <button disabled onclick="exibeMensage(), tempoMensage()" class="btn btn-outline-info btn-lg btn-block" type="button" id="copiar">Copiar</button>
+                    </div>
+                    </div>
+    
+                </div>
+            </div>
+
+
+    </div>
+    
+    <footer class="footer-expand-sm footer-dark bg-info text text-light ">
+      <span>         
+        Desenvolvido por: Joel Rodrigues de souza &copy;
+      </span> 
+    </footer>   
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/descriptor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <script>
+        function typeWrite(elemento){
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = ' ';
+          textoArray.forEach(function(letra, i){   
+            
+          setTimeout(function(){
+              elemento.innerHTML += letra;
+          }, 75 * i)
+      
+        });
+      }
+      const titulo = document.querySelector('.vamos');
+      typeWrite(titulo);
+</script>
+
+  </body>
+</html>

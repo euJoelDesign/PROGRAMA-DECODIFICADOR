@@ -1,0 +1,48 @@
+
+@media (max-width: 576px) {
+ 
+    #campo-criptografia{
+    width: 100%; 
+    height: 600px; 
+    margin-top: 2%;}
+
+    #caixa-mensagem{
+    width: 100%; 
+    height: 500 px;
+}
+
+    #descriptografar, #encriptografar{
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    #campo-criptografia{
+    width: 60%; 
+    height: 600px; 
+    margin-top: 2%;
+    margin-left: 2%;}
+
+    #textCriptor{
+        background-color: transparent;
+        color: aliceblue;
+    }
+
+    .area-button{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    #caixa-mensagem{
+        margin-top: 3%;
+    }
+    
+
+
+}
+
+
+
