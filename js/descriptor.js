@@ -32,14 +32,14 @@ function habilitaBotao(){
     }
     
 }
-function tempoMensage(){
+/*function tempoMensage(){
 $().ready(function() {
     setTimeout(function () {
     $('#msg').hide();
     }, 600);
 });
 
-}
+}*/
 function exibeMensage(){
     document.getElementById("p").innerHTML = "Texto copiado com sucesso!";
 }
