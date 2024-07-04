@@ -42,7 +42,7 @@ $().ready(function() {
 
 }*/
 function exibeMensage(){
-    document.getElementById("p").innerHTML = "Texto copiado com sucesso!";
+    document.getElementById("p").innerHTML = "Texto copiado com sucessao!";
 }
 
 let copiaTexto = document.querySelector('#copiar');
